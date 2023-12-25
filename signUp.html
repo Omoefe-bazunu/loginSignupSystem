@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/8296ca258d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="fca.png">
+    
+</head>
+<body class="flex justify-center">
+    <div class="h-screen w-2/5 bg-white flex justify-center items-center flex-col gap-y-5" >
+        <img src="milota2.jpg" alt="milota2-logo" class=" w-24 h-24">
+        <form class="loginForm flex flex-col w-full gap-y-3 mb-12">
+            <a class="w-full h-8 pl-2" href="login.html"><i class="fa-solid fa-arrow-left-long cursor-pointer"></i></a>
+            <h2>Create your Account</h2>
+            <input type="email" id="email" name="email" placeholder="Email" class="w-full outline-none border-neutral-400 rounded-lg  border-2 bg-white p-1">
+            <input type="password" id="pwd" name="password" placeholder="Password" class="w-full outline-none border-neutral-400 rounded-lg border-2 bg-white p-1">
+            <input type="password" id="Cpwd" name="confirmPassword" placeholder="Confirm Password" class="w-full outline-none border-neutral-400 rounded-lg border-2 bg-white p-1">
+            <button class="w-full text-center cursor-pointer rounded-lg text-white bg-indigo-900  my-0 mx-auto py-1 actionBtn">Sign up</button>
+        </form>
+        <div class="flex flex-col w-full justify-center items-center gap-y-3">
+            <p class="w-full my-0 mx-auto text-center">- Or Sign up with -</p>
+            <div class="SocialIcons flex  gap-x-3 w-full justify-center items-center">
+                <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="google.png" class=" w-10 h-6"></button>
+                <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="facebook.png" class=" w-10 h-6"></button>
+                <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="x.png" class=" w-10 h-6"></button>
+            </div>
+        </div>
+
+
+    </div>
+ <script>
+    const loginBtn = document.querySelector('.actionBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const email = document.querySelector('#email').value;
+    const pwd = document.querySelector('#pwd').value;
+    const cpwd = document.querySelector('#Cpwd').value;
+    if(!email || !pwd || !cpwd) {
+        alert('Please enter your complete details in the fields');
+    } else if(pwd !== cpwd) {
+        alert('The passwords you provided do not match. Please re-enter correctly.')
+    } else { 
+        alert('Sign up Success');
+        const email = document.querySelector('#email').value = ""
+        const pwd = document.querySelector('#pwd').value = ""
+        const cpwd = document.querySelector('#Cpwd').value = ""
+ };
+ });
+
+ const socialbuttons = document.querySelectorAll('.sm');
+    socialbuttons.addEventListener('click', () => {
+     socialbuttons.classList.toggle('clicked');
+    });
+
+    
+    
+ </script>
+</body>
+</html>

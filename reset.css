@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sm {
+    transition: transform 1s ease;
+}
+
+.sm:hover, .sm.clicked {
+    transform: scale(0.8);
+}
+
+/* .logo {
+    animation: scaleAnimation 5s infinite alternate;
+};
+
+@keyframes scaleAnimation {
+    from {
+      transform: scale(1); 
+    }
+    to {
+      transform: scale(1.5); 
+    }
+  }; */
