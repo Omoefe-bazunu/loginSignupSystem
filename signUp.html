@@ -11,7 +11,7 @@
     
 </head>
 <body class="flex justify-center">
-    <div class="h-screen w-2/5 bg-white flex justify-center items-center flex-col gap-y-5" >
+    <div class="h-screen min-w-fit bg-white flex justify-center items-center flex-col gap-y-5" >
         <img src="milota2.jpg" alt="milota2-logo" class=" w-24 h-24">
         <form class="loginForm flex flex-col w-full gap-y-3 mb-12">
             <a class="w-full h-8 pl-2" href="login.html"><i class="fa-solid fa-arrow-left-long cursor-pointer"></i></a>
@@ -44,9 +44,9 @@
         alert('The passwords you provided do not match. Please re-enter correctly.')
     } else { 
         alert('Sign up Success');
-        const email = document.querySelector('#email').value = ""
-        const pwd = document.querySelector('#pwd').value = ""
-        const cpwd = document.querySelector('#Cpwd').value = ""
+        const email = document.querySelector('#email').value = "";
+        const pwd = document.querySelector('#pwd').value = "";
+        const cpwd = document.querySelector('#Cpwd').value = "";
  };
  });
 
