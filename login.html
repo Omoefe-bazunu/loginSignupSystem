@@ -14,25 +14,24 @@
         <img src="milota2.jpg" alt="milota2-logo" class=" w-24 h-24">
         <form class="loginForm flex flex-col w-full gap-y-3 mb-12">
             <h2>Login to your Account</h2>
-            <input type="email" name="email" id="email" placeholder="Email" class="w-full rounded-lg  border-2 outline-none border-neutral-400 bg-white p-1">
-            <input type="password" name="password" id="pwd" placeholder="Password" class="w-full rounded-lg outline-none border-neutral-400 border-2 bg-white p-1">
+            <input type="email" name="email" id="email" placeholder="Email" class="w-full rounded-lg  border-2 outline-none border-neutral-400 bg-white p-2.5">
+            <input type="password" name="password" id="pwd" placeholder="Password" class="w-full rounded-lg outline-none border-neutral-400 border-2 bg-white p-2.5">
             <div class="w-full p-2 flex gap-x-3 gap-y-5 flex-wrap">
-                <input type="checkbox" name="checkbox" value="checkbox" class=" ">
-                <p class=" md:flex-grow">Keep me logged in</p>
-                <p class="text-red-500 cursor-pointer"><a href="pwdreset.html">Forgot Password?</a></p>
+                <input type="checkbox" name="checkbox" value="checkbox" class=" h-4 cursor-pointer">
+                <p class=" md:flex-grow text-xs">Keep me logged in</p>
+                <p class="text-red-500 cursor-pointer text-xs"><a href="pwdreset.html">Forgot Password?</a></p>
             </div>
-            <button class="w-full actionBtn text-center cursor-pointer rounded-lg text-white bg-indigo-900  my-0 mx-auto py-1">Sign in</button>
+            <button class="w-full actionBtn text-center cursor-pointer rounded-lg text-white bg-indigo-900  my-0 mx-auto py-2.5">Sign in</button>
         </form>
         <div class="flex flex-col w-full justify-center items-center gap-y-3">
             <p class="w-full my-0 mx-auto text-center">- Or Sign in with -</p>
             <div class="SocialIcons flex  gap-x-3 w-full justify-center items-center">
                 <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="google.png" class=" w-10 h-6"></button>
-                <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="facebook.png" class=" w-10 h-6"></button>
+                <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="fb.png" class=" w-10 h-6"></button>
                 <button class="w-20  h-10 shadow-md flex justify-center items-center p-2 cursor-pointer sm"> <img src="x.png" class=" w-10 h-6"></button>
             </div>
+            <p class="signUp w-full text-center p-2"> Don't have an Account? <a class=" text-indigo-900 cursor-pointer" href="signUp.html">Sign up</a></p>
         </div>
-        <p class="signUp w-full text-center p-2"> Don't have an Account? <a class=" text-indigo-900 cursor-pointer" href="signUp.html">Sign up</a></p>
-    </div>
  <script>
 
  const loginBtn = document.querySelector('.actionBtn').addEventListener('click', (e) => {
